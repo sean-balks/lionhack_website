@@ -1,0 +1,67 @@
+/* 
+Compile this file to css/custom_9ARZu2My.css using any SCSS preprocessor. 
+More information here: https://slides.gitbook.io/manual/scss
+*/
+
+@import "mixins.scss"; 
+@import "variables.scss";
+@import "variables-custom.scss";
+
+/* First screen (#1) */
+.art-gallery-heading-bg{
+  min-height:0 !important;
+  background-size:contain !important;
+  background-repeat: no-repeat;
+}
+.art-gallery-heading{
+  mix-blend-mode: difference;
+  color: #FBFBFB;
+}
+
+/* Brief Schedule Overview (#4) */
+
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-104-5e72c85f"] */
+.slide[data-cid="slide-104-5e72c85f"]{
+  .slider-104{
+    img{
+      width:300px;
+      border:0px solid transparent;
+      transition: .5s;
+    }
+    .slick-slide{
+      &.slick-current{
+        img{
+          border: 10px solid $blue;
+          opacity:1 !important;
+        }
+      }
+    }
+  }
+  .slider-104-arrow{
+    @include media($phablet, max) {
+      .slick-prev{
+        margin-right: 0!important;
+        float: right;
+      }
+      .slick-next{
+        float: none;
+      }
+    }
+    &:hover{
+      svg{
+        opacity:0.6;
+      }
+    }
+    svg{
+      transition: .15s;
+    }
+  }
+  .slider-104-controller{
+    @include media($phablet, max) {
+      order:1;
+    }
+  }
+  .social-104:hover{
+    opacity: 1 !important;
+  }
+}
