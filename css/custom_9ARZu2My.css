@@ -1,0 +1,46 @@
+/* First screen (#1) */
+.art-gallery-heading-bg {
+  min-height: 0 !important;
+  background-size: contain !important;
+  background-repeat: no-repeat;
+}
+
+.art-gallery-heading {
+  mix-blend-mode: difference;
+  color: #FBFBFB;
+}
+
+/* Brief Schedule Overview (#4) */
+/* To restrict styles to the current slide, panel, or example use .slide[data-cid="slide-104-5e72c85f"] */
+.slide[data-cid=slide-104-5e72c85f] .slider-104 img {
+  width: 300px;
+  border: 0px solid transparent;
+  transition: 0.5s;
+}
+.slide[data-cid=slide-104-5e72c85f] .slider-104 .slick-slide.slick-current img {
+  border: 10px solid #2196F3;
+  opacity: 1 !important;
+}
+@media (max-width: 767px) {
+  .slide[data-cid=slide-104-5e72c85f] .slider-104-arrow .slick-prev {
+    margin-right: 0 !important;
+    float: right;
+  }
+  .slide[data-cid=slide-104-5e72c85f] .slider-104-arrow .slick-next {
+    float: none;
+  }
+}
+.slide[data-cid=slide-104-5e72c85f] .slider-104-arrow:hover svg {
+  opacity: 0.6;
+}
+.slide[data-cid=slide-104-5e72c85f] .slider-104-arrow svg {
+  transition: 0.15s;
+}
+@media (max-width: 767px) {
+  .slide[data-cid=slide-104-5e72c85f] .slider-104-controller {
+    order: 1;
+  }
+}
+.slide[data-cid=slide-104-5e72c85f] .social-104:hover {
+  opacity: 1 !important;
+}
